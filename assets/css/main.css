@@ -285,11 +285,3 @@
 #mocha code .number {
   color: #2f6fad;
 }
-
-#mocha .suite:first-child {
-  display: block;
-}
-
-#mocha .suite {
-  display: none;
-}
