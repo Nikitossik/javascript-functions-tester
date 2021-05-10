@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions Validator </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css"> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+
+    <script>
+        mocha.setup('bdd');
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+
+    <script>
+        var assert = chai.assert;
+    </script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <section class="sect">
+            <div class="sect__body">
+                <div class="container">
+                    <div class="sect__task task">
+
+                    </div>
+                    <div class="sect__editor editor">
+                        <div class="editor__body">
+                            <div id="editor"></div>
+                        </div>
+                        <div class="editor__footer">
+                            <button id="check-btn" class="btn btn-primary editor__btn">Проверить</button>
+                            <a id="save-btn" class="btn btn-primary editor__btn">Скачать</a>
+                        </div>
+                    </div>
+                    <div class="sect__tests">
+                        <div id="mocha"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/js/src-min-noconflict/ace.js"></script>
+    <script src="assets/js/src-min-noconflict/ext-language_tools.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script id='user-code-script'></script>
+    <script id='user-code-test'></script>
+</body>
+
+</html>
